@@ -1,118 +1,76 @@
 <template>
-  <div class="hello">
-    <p>
-      FTestor a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-          target="_blank"
-          rel="noopener"
-          >babel</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa"
-          target="_blank"
-          rel="noopener"
-          >pwa</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
-          target="_blank"
-          rel="noopener"
-          >eslint</a
-        >
-      </li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li>
-        <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-          >Forum</a
-        >
-      </li>
-      <li>
-        <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
-        >
-      </li>
-      <li>
-        <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
-          >Twitter</a
-        >
-      </li>
-      <li>
-        <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
-      </li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
-      </li>
-      <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
-    </ul>
-  </div>
+ <div class="introduction-container">
+        <div class="flex">
+            <div>   
+                <h1> Discover </h1> 
+            </div>
+            <div>
+                <img class="close" src="../assets/close.svg">
+            </div>
+        </div>
+
+        <div class="content-text">
+            <p>At the discover page you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
+        </div>    
+        <img class="content-image" src="../assets/discover-intro.svg">
+    </div> 
+
+   
 </template>
 
 <script>
+
 export default {
   name: "Introduction",
 };
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+/* Rectangle 4 */
+
+.introduction-container{ 
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10%;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+.content-text{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 80%;
 }
-a {
-  color: #42b983;
+
+.content-image{
+    width: 30vh;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
 }
+
+.close{
+    width: 5vh;
+}
+.cursor-grab {
+    cursor: grab;
+}
+
 </style>
