@@ -20,16 +20,14 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-// import PostCard from './components/PostCard.vue';
-// import Product from './components/Products.vue';
+// import HelloWorld from "./components/HelloWorld.vue";
 import Products from './components/Products';
 import PostCard from './components/PostCard';
 
 export default {
   name: "app",
   components: {
-    HelloWorld,
+    // HelloWorld,
     Products,
     PostCard,
   },
@@ -72,20 +70,16 @@ export default {
           color: 'blue',
           bgtext: 'SDG1',
           src: require('./assets/hawk-1.jpeg'),
-          products: '2h ago',
+          added: '2h ago',
           liked: 'yes'
-          // product: 'heavy rain!'
-          // person who posted pic:
-    
         },
          {
           title: 'Garden Lightning',
           color: 'green',
           bgtext: 'SDG2',
           src: require('./assets/hawk-2.jpeg'),
-          products: '3h ago',
+          added: '3h ago',
           liked: 'yes'
-          // product: 'heavy rain!'
 
         }, 
         {
@@ -93,10 +87,8 @@ export default {
           color: 'red',
           bgtext: 'SDG3',
           src: require('./assets/hawk-3.jpeg'),
-          products: '4h ago',
+          added: '4h ago',
           liked: 'yes'
-          // product: 'heavy rain!'
-
         },
         ]
       }
@@ -114,32 +106,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
-
-  body{
-    font-family: 'montserratt', sans-serif;
-    }
-
-   main{
-    width: 100vw;
-    min-height: 100vh;
-    overflow: hidden;
-
-    background-color: #EEE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     }
-
-     .products{
-       display: flex;
-       max-width: 1280px;
-       padding: 25px;
-       margin: 0 auto;
-       } */
 </style>

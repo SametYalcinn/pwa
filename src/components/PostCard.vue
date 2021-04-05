@@ -41,7 +41,7 @@
 
         </div>
 
-        <p>{{card.products}}</p>
+        <p class="time-added">{{card.added}}</p>
     </div>
 </template>
 
@@ -56,24 +56,55 @@ export default {
 /* MY CSS */
 .post-img{
     /* float: left; */
-    width:  200px;
+    width:  300px;
     height: 200px;
     /* object-fit: cover; */
     /* border-radius: 50%; */
+    position: relative;
+    display: inline-block;
 }
 
 .image {
-    border-radius: 7%;
+    border-radius: 7%;   
 }
+
+.post-img img {
+    display: block;
+}
+
+.post-img:after{
+    position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(17, 194, 47, 0.65) 100%);
+    border-radius: 7%;   
+    /* background-image: linear-gradient(to bottom right, #24d484, #116432); */
+}
+
+
 
 .post-actions{
     display: flex;
     /* vertical-align: center; */
 }
 
+.time-added{
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+
 .PA-align{
     display: flex;
     margin-right: 20px;
+}
+
+.PA-align h3 {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 7px;
 }
 
 .circular--landscape {
@@ -91,6 +122,14 @@ export default {
   height: 100%;
   /* margin-left: -50px; */
 }
+
+
+
+
+
+
+
+
 
 /* CSS TUTORIAL */
 
