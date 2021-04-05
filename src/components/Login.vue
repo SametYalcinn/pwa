@@ -15,6 +15,18 @@
     </div>
     <div><span>Continue with Google</span></div>
 </div>
+<div style="margin: 30px;">
+    <p>Or continue with mail:</p>
+</div>
+<div>
+    <input type="text" placeholder="email" class="login-input">
+</div>
+<div>
+    <input type="text" placeholder="password" class="login-input">
+</div>
+<div class="login-button" id="email">
+    <div><span>Login</span></div>
+</div>
 </div>
 </template>
 
@@ -41,4 +53,11 @@ export default {
         align-items: center;
         margin-bottom: 20px;
     }
+.login-input {
+    border: 0.5px solid rgb(232, 232, 232);
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
 </style>
