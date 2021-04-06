@@ -1,15 +1,20 @@
 <template>
-  <Introduction />
+  <IntroductionModal v-if="firstTime" @closeIntroductionModal="firstTime = false"/>
 </template>
 
 <script>
-import Introduction from "./components/Introduction";
+import IntroductionModal from "./components/IntroductionModal";
 
 
 export default {
   name: "App",
+  data() {
+    return {
+      firstTime: true
+    }
+  },
   components: {
-    Introduction,
+    IntroductionModal,
   },
 };
 </script>
