@@ -1,6 +1,6 @@
 <template>
     <Menu />
-    <Login />
+    <Carousel />
     <!-- <Profile /> -->
 </template>
 
@@ -8,16 +8,18 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 import Menu from './components/Menu.vue';
 // import Profile from './components/Profile';
-import Login from './components/Login.vue';
+// import Login from './components/Login.vue';
 // import Info from './components/profile/Info';
+import Carousel from './components/Carousel';
 
 export default {
   name: "App",
   components: {
     // HelloWorld,
     Menu,
-    Login,
+    // Login,
     // Profile,
+    Carousel,
   },
 };
 </script>
