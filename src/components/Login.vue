@@ -1,5 +1,4 @@
 <template>
-<div>
 <div class="logo">
     <img src="../assets/logo.svg" alt="">
 </div>
@@ -26,7 +25,6 @@
 </div>
 <div class="login-button" id="email">
     <div><span>Login</span></div>
-</div>
 </div>
 </template>
 

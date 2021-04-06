@@ -1,22 +1,25 @@
 <template>
     <Menu />
-    <Login />
+    <!-- <Login /> -->
     <!-- <Profile /> -->
+    <Sdg />
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
 import Menu from './components/Menu.vue';
+import Sdg from './components/Sdg.vue';
 // import Profile from './components/Profile';
-import Login from './components/Login.vue';
+// import Login from './components/Login.vue'
 // import Info from './components/profile/Info';
 
 export default {
   name: "App",
   components: {
     // HelloWorld,
+    Sdg,
     Menu,
-    Login,
+    // Login,
     // Profile,
   },
 };
