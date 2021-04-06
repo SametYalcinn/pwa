@@ -1,5 +1,5 @@
 <template>
- <div class="introduction-container">
+ <!-- <div class="introduction-container">
         <div class="flex">
             <div>   
                 <h1> Discover </h1> 
@@ -13,22 +13,33 @@
             <p>At the discover page you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
         </div>    
         <img class="content-image" src="../assets/discover-intro.svg">
-    </div> 
+    </div>  -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <div class="w3-container">
 
-   
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+
+  <div id="id01" class="w3-modal" >
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 </template>
 
 <script>
-
 export default {
   name: "Introduction",
 };
-
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
-/* Rectangle 4 */
 
 .introduction-container{ 
     position: absolute;
@@ -68,9 +79,6 @@ export default {
 
 .close{
     width: 5vh;
-}
-.cursor-grab {
-    cursor: grab;
 }
 
 </style>
