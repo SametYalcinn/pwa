@@ -1,9 +1,12 @@
 <template>
-    <div class="card-tiles">
-        <div class="outer">
-            <div class="one">hallo</div>
-            <div class="one">hello</div>
-            <div class="one">world</div>
+    <div class="tile">
+        <div class="">
+            <!-- <div class="one">{{tile.title}}</div> -->
+            <!-- <div class="one">hallo</div> -->
+            <!-- <div class="one">hello</div>
+            <div class="one">world</div> -->
+        <div class="">{{tile.title}}</div>
+
         </div>
     </div>
     
@@ -11,8 +14,8 @@
 
 <script> 
 export default {
-    name: 'card',
-    props:['card']
+    name: 'tile',
+    props:['tile']
     }    
 </script>
 
@@ -23,7 +26,7 @@ export default {
   /* width: 40%; */
 }
 
-.card-tiles {
+.tile{
         /* flex: 1 1 33.333%; */
         width: 40%;
         /* padding-left: 40%; */
@@ -34,10 +37,13 @@ export default {
         margin-right: 0px;
         margin: auto;
 
+    color: #00C390;
+    font-weight: 600;
+    text-align: center;
     }
 
 
-    .outer > * {
+    /* .outer > * {
   display:inline-block;
   vertical-align:middle;
   background-color:lightgreen;
@@ -47,23 +53,8 @@ export default {
     width:60px; 
     height:60px;
     margin: 10px;
-    }
+      display:inline-block;
 
-/* .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 70%;
-    background: #eee;
-    margin: 10px auto;
-    position: relative;
-    text-align:center;
-}
+    } */
 
-.block {
-    background: green;
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-} */
 </style>

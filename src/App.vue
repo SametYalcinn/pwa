@@ -7,12 +7,14 @@
         :product="product"
         /> 
      </section>
-    <section class="tiles">
-      <Tiles 
-        v-for="tile in tiles"
-        :key="tile.color"
-        :card="card"
-        /> 
+    <section class="tiles">  
+              <div class="outer">  
+              <Tiles class="one"
+                v-for="tile in tiles"
+                :key="tile.color"
+                :tile="tile"
+              />   
+              </div>
      </section>
     <section class="cards">
       <PostCard 
@@ -23,8 +25,8 @@
      </section>
 
   </main>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
 </template>
 
 <script>
@@ -45,21 +47,21 @@ export default {
     return {
       tiles: [
         {
-          title: '1. No Proverty',
+          title: 'Sunny',
           color: 'green',
           bgtext: 'SDG1',
           src: require('./assets/SDG-1.png'),
           products: '2h ago',
         },
          {
-          title: '2. Zero Hunger',
+          title: 'Rainy',
           color: 'blue',
           bgtext: 'SDG2',
           src: require('./assets/SDG-2.png'),
           products: '3h ago',
         }, 
         {
-          title: '3. Good Health and Well-being',
+          title: 'Snow',
           color: 'red',
           bgtext: 'SDG3',
           src: require('./assets/SDG-3.png'),
@@ -109,4 +111,26 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+ .outer > * {
+  display:inline-block;
+  vertical-align:middle;
+  background-color:white;
+  box-shadow: 0px 4px 8px rgb(208, 208, 208);
+  /* width:60px; height:60px; */
+  margin: auto;
+  width: 100%;
+}
+.one {
+    width:90px; 
+    height:130px;
+    margin: 10px;
+    display:inline-block;
+    border-radius: 20%;
+    }
+
+    .tiles {
+      margin: auto;
+      width: 40%;
+    }
 </style>
