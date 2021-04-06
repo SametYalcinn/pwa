@@ -7,6 +7,13 @@
         :product="product"
         /> 
      </section>
+    <section class="tiles">
+      <Tiles 
+        v-for="tile in tiles"
+        :key="tile.color"
+        :card="card"
+        /> 
+     </section>
     <section class="cards">
       <PostCard 
         v-for="card in cards"
@@ -14,6 +21,7 @@
         :card="card"
         /> 
      </section>
+
   </main>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -22,6 +30,7 @@
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
 import Products from './components/Products';
+import Tiles from './components/Tiles';
 import PostCard from './components/PostCard';
 
 export default {
@@ -29,40 +38,34 @@ export default {
   components: {
     // HelloWorld,
     Products,
+    Tiles,
     PostCard,
   },
     data () {
     return {
-      // products: [
-      //   {
-      //     title: '1. No Proverty',
-      //     color: 'green',
-      //     bgtext: 'SDG1',
-      //     src: require('./assets/SDG-1.png'),
-      //     products: '2h ago',
-      //     // product: 'heavy rain!'
-      //     // person who posted pic:
-    
-      //   },
-      //    {
-      //     title: '2. Zero Hunger',
-      //     color: 'blue',
-      //     bgtext: 'SDG2',
-      //     src: require('./assets/SDG-2.png'),
-      //     products: '3h ago',
-      //     // product: 'heavy rain!'
-
-      //   }, 
-      //   {
-      //     title: '3. Good Health and Well-being',
-      //     color: 'red',
-      //     bgtext: 'SDG3',
-      //     src: require('./assets/SDG-3.png'),
-      //     products: '4h ago',
-      //     // product: 'heavy rain!'
-
-      //   },
-      //   ],
+      tiles: [
+        {
+          title: '1. No Proverty',
+          color: 'green',
+          bgtext: 'SDG1',
+          src: require('./assets/SDG-1.png'),
+          products: '2h ago',
+        },
+         {
+          title: '2. Zero Hunger',
+          color: 'blue',
+          bgtext: 'SDG2',
+          src: require('./assets/SDG-2.png'),
+          products: '3h ago',
+        }, 
+        {
+          title: '3. Good Health and Well-being',
+          color: 'red',
+          bgtext: 'SDG3',
+          src: require('./assets/SDG-3.png'),
+          products: '4h ago',
+        },
+        ],
 
         cards: [
         {
