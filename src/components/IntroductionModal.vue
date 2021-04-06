@@ -30,7 +30,7 @@
                     <p>At the discover page you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
                 </div>   
                 <div class="content-image">
-                    <img src="../assets/save-intro.svg">
+                    <img src="../assets/discover-intro.svg">
                 </div>   
                 <div class="indicator">
                     <img src="../assets/slide1.svg">
@@ -68,7 +68,7 @@
                     <p>At the discover pdcdfdvcfefefeefefefeage you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
                 </div>   
                 <div class="content-image">
-                    <img src="../assets/save-intro.svg">
+                    <img src="../assets/add-intro.svg">
                 </div>   
                 <div class="indicator">
                     <img src="../assets/slide3.svg">
@@ -87,7 +87,7 @@
                     <p>At the discover pdcdfdvcfefefeefefefeage you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
                 </div>   
                 <div class="content-image">
-                    <img src="../assets/save-intro.svg">
+                    <img src="../assets/sdg-intro.svg">
                 </div>   
                 <div class="indicator">
                     <img src="../assets/slide4.svg">
@@ -106,7 +106,7 @@
                     <p>At the discover pdcdfdvcfefefeefefefeage you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
                 </div>   
                 <div class="content-image">
-                    <img src="../assets/save-intro.svg">
+                    <img src="../assets/profile-intro.svg">
                 </div>   
                 <div class="indicator">
                     <img src="../assets/slide5.svg">
@@ -148,7 +148,6 @@ export default {
     }
 };
     
-   
 </script>
 
 <style scoped>
