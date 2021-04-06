@@ -18,7 +18,7 @@
      <div id="slideshow">
         <div class="slider">
             <div class="slide">
-                <div class="flex">
+                 <div class="flex">
                     <div>   
                         <h1> Discover </h1> 
                     </div>
@@ -28,12 +28,16 @@
                 </div>
                 <div class="content-text">
                     <p>At the discover page you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
-                </div>    
-                <img class="content-image" src="../assets/discover-intro.svg">
-                <img class="indicator" src="../assets/slide1.svg">
+                </div>   
+                <div class="content-image">
+                    <img src="../assets/save-intro.svg">
+                </div>   
+                <div class="indicator">
+                    <img src="../assets/slide1.svg">
+                </div> 
             </div>
-            <div class="slide">
-                <div class="flex">
+           <div class="slide">
+               <div class="flex">
                     <div>   
                         <h1> Save </h1> 
                     </div>
@@ -42,13 +46,17 @@
                     </div>
                 </div>
                 <div class="content-text">
-                    <p>At the dijbcndjkbkbcdhkbchdbckhbcdkbscover page you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
-                </div>    
-                <img class="content-image" src="../assets/save-intro.svg">
-                <img class="indicator" src="../assets/slide2.svg">
-            </div>
+                    <p>At the discover pdcdfdvcfefefeefefefeage you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
+                </div>   
+                <div class="content-image">
+                    <img src="../assets/save-intro.svg">
+                </div>   
+                <div class="indicator">
+                    <img src="../assets/slide2.svg">
+                </div>   
+           </div>
             <div class="slide">
-                <div class="flex">
+                  <div class="flex">
                     <div>   
                         <h1> Add Solution </h1> 
                     </div>
@@ -57,13 +65,17 @@
                     </div>
                 </div>
                 <div class="content-text">
-                    <p>At the discover page you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
-                </div>    
-                <img class="content-image" src="../assets/add-intro.svg">
-                <img class="indicator" src="../assets/slide3.svg">
+                    <p>At the discover pdcdfdvcfefefeefefefeage you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
+                </div>   
+                <div class="content-image">
+                    <img src="../assets/save-intro.svg">
+                </div>   
+                <div class="indicator">
+                    <img src="../assets/slide3.svg">
+                </div> 
             </div>
             <div class="slide">
-                <div class="flex">
+                  <div class="flex">
                     <div>   
                         <h1> SDG </h1> 
                     </div>
@@ -72,13 +84,17 @@
                     </div>
                 </div>
                 <div class="content-text">
-                    <p>At the discover page you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
-                </div>    
-                <img class="content-image" src="../assets/sdg-intro.svg">
-                <img class="indicator" src="../assets/slide4.svg">
+                    <p>At the discover pdcdfdvcfefefeefefefeage you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
+                </div>   
+                <div class="content-image">
+                    <img src="../assets/save-intro.svg">
+                </div>   
+                <div class="indicator">
+                    <img src="../assets/slide4.svg">
+                </div> 
             </div>
             <div class="slide">
-                <div class="flex">
+                  <div class="flex">
                     <div>   
                         <h1> Profile </h1> 
                     </div>
@@ -87,10 +103,14 @@
                     </div>
                 </div>
                 <div class="content-text">
-                    <p>At the discover page you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
-                </div>    
-                <img class="content-image" src="../assets/profile-intro.svg">
-                <img class="indicator" src="../assets/slide5.svg">
+                    <p>At the discover pdcdfdvcfefefeefefefeage you can find all the solutions to help you contribute for a better climate. It also gives you the possibility to search trough solutions.</p>
+                </div>   
+                <div class="content-image">
+                    <img src="../assets/save-intro.svg">
+                </div>   
+                <div class="indicator">
+                    <img src="../assets/slide5.svg">
+                </div> 
             </div>
         </div>
    </div>
@@ -114,7 +134,9 @@ export default {
         body.addEventListener("click", function() {
             current_slide+=1;
             if (current_slide>5) {
-                current_slide=1;
+                // current_slide=1;
+                // this.closeModal();
+                current_slide =5; 
             }
             slider.style.marginLeft = "-" + (((current_slide)-1)*100) + "%";
         })
@@ -140,6 +162,37 @@ export default {
     opacity: 0.1;
 }
 
+#slideshow{ 
+    background-color:gray;
+    overflow:hidden; 
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10%;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+#slideshow .slider{ 
+    width:500%;
+    display:flex;
+    transition:all 250ms; 
+}
+
+#slideshow .slider .slide{
+    width:20%;
+    height:300px;
+}
+
+.close{
+    cursor: pointer;
+    width: 5vh;
+}
+
 .flex{
     display: flex;
     justify-content: space-between;
@@ -160,42 +213,12 @@ export default {
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto; 
-    display: block;
 }
 
-.close{
-    width: 5vh;
-}
-
-     #slideshow                     
-    { 
-    background-color:gray;
-    overflow:hidden; 
+.indicator{
+    width: 100%;
+    text-align: center;
     position: absolute;
-    width: 90%;
-    height: 80%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 10%;
-    background: white;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    }
-    #slideshow .slider              { width:500%;display:flex;transition:all 250ms; }
-    #slideshow .slider .slide       { width:20%;height:300px;}
-
-  
-
-    .indicator{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-   
-    }
-    
-
-     
-
+    bottom: 10%;
+}
 </style>
