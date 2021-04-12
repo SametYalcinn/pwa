@@ -128,21 +128,24 @@ export default {
 
     },
     mounted(){
+        let self = this;
         let current_slide=1;
-        const body=document.querySelector("body");
+        // const body=document.querySelector("body");
         const slider=document.querySelector("#slideshow .slider");
-        body.addEventListener("click", function() {
+        const slider1=document.querySelector("#slideshow");
+        slider1.addEventListener("click", function() {
             current_slide+=1;
             if (current_slide>5) {
-                // current_slide=1;
-                // this.closeModal();
-                current_slide =5; 
+                current_slide=1;
+                self.closeModal();
+                // current_slide =5; 
             }
             slider.style.marginLeft = "-" + (((current_slide)-1)*100) + "%";
         })
     },
     methods: {
         closeModal() {
+            console.log("beibfief");
             this.$emit('closeIntroductionModal');
         }
     }
