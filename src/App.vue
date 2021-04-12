@@ -1,14 +1,14 @@
 <template>
-    <Menu />
-    <Login />
-    <!-- <Profile /> -->
+  <Menu />
+  <Login />
+  <!-- <Profile /> -->
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
-import Menu from './components/Menu.vue';
+import Menu from "./components/Menu.vue";
 // import Profile from './components/Profile';
-import Login from './components/Login.vue';
+import Login from "./components/Login.vue";
 // import Info from './components/profile/Info';
 
 export default {
