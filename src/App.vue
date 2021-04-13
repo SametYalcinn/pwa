@@ -21,7 +21,7 @@
       /></router-link>
     </div>
     <div class="menu-item">
-      <router-link to="/profile"
+      <router-link to="/login"
         ><img src="./assets/icons/profile.svg" alt=""
       /></router-link>
     </div>

@@ -10,26 +10,27 @@ const routes = [
   {
     path: "/saved",
     name: "Saved",
-    component: () =>
-      import( "../views/Saved.vue"),
+    component: () => import("../views/Saved.vue"),
   },
   {
     path: "/add",
     name: "Add",
-    component: () =>
-      import( "../views/Add.vue"),
+    component: () => import("../views/Add.vue"),
   },
   {
     path: "/sdg",
     name: "Sdg",
-    component: () =>
-      import("../views/Sdg.vue"),
+    component: () => import("../views/Sdg.vue"),
   },
   {
     path: "/profile",
     name: "Profile",
-    component: () =>
-      import("../views/Profile.vue"),
+    component: () => import("../views/Profile.vue"),
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: () => import("../views/Login.vue"),
   },
 ];
 
