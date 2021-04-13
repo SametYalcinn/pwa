@@ -90,16 +90,5 @@ h1{
   text-align: left;
 }
 
-.input{
-  width: 100%;
-  padding: 14px 20px;
-  /* margin: 8px 0;
-  display: inline-block; */
-  border: 1px solid rgb(240, 240, 240);
-  border-radius: 20px;
-  box-sizing: border-box;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
-}
 
 </style>

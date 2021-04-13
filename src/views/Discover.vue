@@ -2,7 +2,7 @@
   <IntroductionModal v-if="firstTime" @closeIntroductionModal="firstTime = false"/>
   
   <div class="pagecontent">
-    <h1>Profile</h1>
+    <h1>Discover</h1>
     <div class="search">
       <input type="text" class="input" placeholder="Search">
     </div>
@@ -31,8 +31,30 @@
     </div>
   </div>
 
- 
+  <div class="pagecontent" style="margin-top:10px;">
+    <div class="dailytip">
+      <div class="content-dt">
+        <h1>Daily Tip</h1>
+        <p>Special selected daily tip by our experts!</p>
+        
+      </div>
+      <img src="../assets/dailytip.svg"/>
+    </div>
+  </div>
 
+  <div class="pagecontent">
+     <h1>Impact</h1>
+     <div class="impact">
+       <div class="impactuser">
+         <h2>Impacted users</h2>
+         <p>7273</p>
+       </div>
+       <div class="users">
+         <h2>Users</h2>
+        <p>7273</p>
+       </div>
+     </div>
+  </div>
 </template>
 
 
@@ -64,6 +86,16 @@ export default {
   color: #2c3e50;
 }
 
+.input{
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+}
+
 .h-filter{
   margin-top: 20px;
   overflow: auto;
@@ -74,8 +106,8 @@ export default {
   text-align: center;
   background: white;
   border-radius: 20px;
-  width: 15vh;
-  height: 15vh;
+  width: 13vh;
+  height: 13vh;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px; 
   display: inline-block;
@@ -96,7 +128,69 @@ export default {
   font-weight: 600;
 }
 
- 
+.dailytip{
+    border-radius: 20px;
+    background-color: #00C390;
+    color: white;
+    display: flex;
+    padding: 5px 0 0 10px;
+    position: relative;
+    
+}
+
+.dailytip h1 {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+
+.dailytip img{
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+}
+
+.content-dt{
+  width: 60%;
+}
+
+.impact{
+  display: flex;
+   justify-content: space-between;
+  
+}
+
+.impact h2{
+  font-size: 20px;
+}
+
+.impactuser{
+  width: 60%;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px; 
+}
+
+
+
+.users{
+  width: 30%;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px; 
+}
+
+
+
+
+
+
+
+
 
 </style>
 
