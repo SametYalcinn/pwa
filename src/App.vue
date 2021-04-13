@@ -1,17 +1,30 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Discover</router-link> |
-    <router-link to="/saved">Saved</router-link> |
-    <router-link to="/add">Add Solution</router-link> |
-    <router-link to="/sdg">SDG</router-link> |
-    <router-link to="/profile">Profile</router-link> |
-  </div>
-    <div class="menu-container">
- <router-link to="/">Discover</router-link> |
-    <router-link to="/saved">Saved</router-link> |
-    <router-link to="/add">Add Solution</router-link> |
-    <router-link to="/sdg">SDG</router-link> |
-    <router-link to="/profile">Profile</router-link> |
+  <div class="menu-container">
+    <div class="menu-item">
+      <router-link to="/"
+        ><img src="./assets/icons/home.svg" alt=""
+      /></router-link>
+    </div>
+    <div class="menu-item">
+      <router-link to="/saved"
+        ><img src="./assets/icons/heart.svg" alt=""
+      /></router-link>
+    </div>
+    <div class="menu-item">
+      <router-link to="/add"
+        ><img src="./assets/icons/add-post.svg" alt=""
+      /></router-link>
+    </div>
+    <div class="menu-item">
+      <router-link to="/sdg"
+        ><img src="./assets/icons/sdg.svg" alt=""
+      /></router-link>
+    </div>
+    <div class="menu-item">
+      <router-link to="/profile"
+        ><img src="./assets/icons/profile.svg" alt=""
+      /></router-link>
+    </div>
   </div>
   <router-view />
 </template>
