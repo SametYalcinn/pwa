@@ -61,7 +61,7 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
 }
 
@@ -77,4 +77,29 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.pagecontent {
+  padding: 5px;
+}
+
+/* .search{
+  text-align: center;  
+} */
+
+h1{
+  text-align: left;
+}
+
+.input{
+  width: 100%;
+  padding: 14px 20px;
+  /* margin: 8px 0;
+  display: inline-block; */
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+}
+
 </style>

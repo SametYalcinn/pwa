@@ -100,8 +100,6 @@
         </div>
    </div>
 
-    
-
 </template>
 
 <script>
@@ -162,6 +160,7 @@ export default {
     background: white;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
+    z-index: 100;
 }
 
 #slideshow .slider{ 
