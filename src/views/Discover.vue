@@ -55,27 +55,57 @@
        </div>
      </div>
   </div>
+
+  <main id="Discover">
+    <!-- CARDS -->
+    <section class="cards">
+      <PostCard 
+        v-for="card in cards"
+        :key="card.color"
+        :card="card"
+        /> 
+     </section>
+  </main>
+  
+    <div class="whitespacenav">
+
+    </div>
 </template>
 
 
 <script>
 import IntroductionModal from "../components/IntroductionModal";
-
-
+import PostCard from "../components/PostCard";
 
 export default {
   name: "Discover",
   data() {
     return {
-      firstTime: true
+      firstTime: true,
+      cards: [
+        {
+          title: 'Heavy Rain!',
+          src: require('../assets/img-1.jpeg'),
+          added: '2h ago',
+        },
+         {
+          title: 'Garden Lightning',
+          src: require('../assets/img-2.jpeg'),
+          added: '3h ago',
+        }, 
+        {
+          title: 'Cleaning your pool',
+          src: require('../assets/img-3.jpeg'),
+          added: '4h ago',
+        },
+        ] 
     }
   },
   components: {
     IntroductionModal,
-  },
+    PostCard,
+  }, 
 };
-
-
 </script>
 
 <style>
@@ -173,8 +203,6 @@ export default {
   border-radius: 20px; 
 }
 
-
-
 .users{
   width: 30%;
   text-align: center;
@@ -183,14 +211,5 @@ export default {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px; 
 }
-
-
-
-
-
-
-
-
-
 </style>
 
