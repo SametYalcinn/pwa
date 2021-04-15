@@ -3,10 +3,11 @@
     <!-- TITEL -->
     <h2>{{ card.title }}</h2>
     <!-- AFBEELDING -->
-    
+
     <div class="post-img">
-        <router-link to="/post">
-      <img :src="card.src" class="image" /></router-link>
+      <router-link to="/post">
+        <img :src="card.src" class="image"
+      /></router-link>
     </div>
 
     <div class="post-actions">
@@ -117,8 +118,7 @@
       <div class="PA-right">
         <!-- PROFILE IMG -->
         <div class="circular--landscape">
-            <img :src="card.src" class="profile-img"
-          />
+          <img :src="card.src" class="profile-img" />
         </div>
       </div>
       <!-- end PA-right -->
