@@ -1,6 +1,7 @@
 <template>
   <!-- <IntroductionModal v-if="firstTime" @closeIntroductionModal="firstTime = false"/> -->
 
+<div class="margin-page">
   <div class="pagecontent">
     <h1>Discover</h1>
     <div class="search">
@@ -63,6 +64,7 @@
   </main>
 
   <div class="whitespacenav"></div>
+  </div>
 </template>
 
 <script>
@@ -101,6 +103,10 @@ export default {
 </script>
 
 <style>
+.margin-page {
+  margin: 12px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

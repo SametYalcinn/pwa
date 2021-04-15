@@ -1,29 +1,23 @@
 <template>
   <!-- <IntroductionModal v-if="firstTime" @closeIntroductionModal="firstTime = false"/> -->
-  
-  <div class="pagecontent">
-    <h1>Saved</h1>
-    <div class="search">
-      <input type="text" class="input" placeholder="Search">
+  <div class="margin-page">
+    <div class="pagecontent">
+      <h1>Saved</h1>
+      <div class="search">
+        <input type="text" class="input" placeholder="Search" />
+      </div>
     </div>
+
+    <main id="Discover">
+      <!-- CARDS -->
+      <section class="cards">
+        <PostCard v-for="card in cards" :key="card.color" :card="card" />
+      </section>
+    </main>
+
+    <div class="whitespacenav"></div>
   </div>
-
-  <main id="Discover">
-    <!-- CARDS -->
-    <section class="cards">
-      <PostCard 
-        v-for="card in cards"
-        :key="card.color"
-        :card="card"
-        /> 
-     </section>
-  </main>
-  
-    <div class="whitespacenav">
-
-    </div>
 </template>
-
 
 <script>
 // import IntroductionModal from "../components/IntroductionModal";
@@ -36,27 +30,27 @@ export default {
       firstTime: true,
       cards: [
         {
-          title: 'Heavy Rain!',
-          src: require('../assets/img-1.jpeg'),
-          added: '2h ago',
+          title: "Heavy Rain!",
+          src: require("../assets/img-1.jpeg"),
+          added: "2h ago",
         },
-         {
-          title: 'Garden Lightning',
-          src: require('../assets/img-2.jpeg'),
-          added: '3h ago',
-        }, 
         {
-          title: 'Cleaning your pool',
-          src: require('../assets/img-3.jpeg'),
-          added: '4h ago',
+          title: "Garden Lightning",
+          src: require("../assets/img-2.jpeg"),
+          added: "3h ago",
         },
-        ] 
-    }
+        {
+          title: "Cleaning your pool",
+          src: require("../assets/img-3.jpeg"),
+          added: "4h ago",
+        },
+      ],
+    };
   },
   components: {
     // IntroductionModal,
     PostCard,
-  }, 
+  },
 };
 </script>
 
@@ -68,56 +62,55 @@ export default {
   color: #2c3e50;
 }
 
-.input{
+.input {
   width: 100%;
   padding: 14px 20px;
   border: 1px solid rgb(240, 240, 240);
   border-radius: 20px;
   box-sizing: border-box;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
 }
 
-.h-filter{
+.h-filter {
   margin-top: 20px;
   overflow: auto;
   white-space: nowrap;
 }
 
-.filter-item{
+.filter-item {
   text-align: center;
   background: white;
   border-radius: 20px;
   width: 13vh;
   height: 13vh;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 20px; 
+  border-radius: 20px;
   display: inline-block;
   margin: 10px;
   position: relative;
 }
 
-.filter-item img{
- margin-top: 20px;
+.filter-item img {
+  margin-top: 20px;
 }
 
-.filter-item p{
+.filter-item p {
   width: 100%;
   text-align: center;
   position: absolute;
   bottom: 0;
-  color: #00C390;
+  color: #00c390;
   font-weight: 600;
 }
 
-.dailytip{
-    border-radius: 20px;
-    background-color: #00C390;
-    color: white;
-    display: flex;
-    padding: 5px 0 0 10px;
-    position: relative;
-    
+.dailytip {
+  border-radius: 20px;
+  background-color: #00c390;
+  color: white;
+  display: flex;
+  padding: 5px 0 0 10px;
+  position: relative;
 }
 
 .dailytip h1 {
@@ -125,43 +118,40 @@ export default {
   margin-bottom: 2px;
 }
 
-
-.dailytip img{
+.dailytip img {
   position: absolute;
   right: 0;
   bottom: -25px;
 }
 
-.content-dt{
+.content-dt {
   width: 60%;
 }
 
-.impact{
+.impact {
   display: flex;
-   justify-content: space-between;
-  
+  justify-content: space-between;
 }
 
-.impact h2{
+.impact h2 {
   font-size: 20px;
 }
 
-.impactuser{
+.impactuser {
   width: 60%;
   text-align: center;
   background: white;
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
-.users{
+.users {
   width: 30%;
   text-align: center;
   background: white;
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 </style>
-

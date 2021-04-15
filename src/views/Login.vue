@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="logo" style="margin-top: 30px">
+    <div class="logo" style="margin-top: 50px">
       <img src="../assets/logo.svg" alt="" />
     </div>
     <div class="login-button" id="apple">
@@ -54,6 +54,7 @@ export default {
 <style scoped>
 .main {
   text-align: center;
+  margin: 12px;
 }
 .login-button {
   width: 50%;
