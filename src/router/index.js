@@ -1,11 +1,12 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Discover from "../views/Discover.vue";
+// import Discover from "../views/Discover.vue";
 
 const routes = [
   {
     path: "/",
     name: "Discover",
-    component: Discover,
+    component: () =>
+    import( "../views/Discover.vue"),
   },
   {
     path: "/saved",

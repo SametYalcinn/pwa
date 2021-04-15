@@ -1,4 +1,5 @@
 <template>
+<IntroductionModal v-if="firstTime" @closeIntroductionModal="firstTime = false"/>
   <div class="menu-container">
     <div class="menu-item">
       <router-link to="/"
@@ -28,6 +29,22 @@
   </div>
   <router-view />
 </template>
+
+<script>
+import IntroductionModal from "./components/IntroductionModal";
+
+export default {
+  name: "App",
+  data() {
+    return {
+      firstTime: true,
+    }
+  },
+  components: {
+    IntroductionModal,
+  }, 
+};
+</script>
 
 <style>
 .menu-container {
@@ -61,7 +78,7 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
 }
 
@@ -77,4 +94,18 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.pagecontent {
+  padding: 5px;
+}
+
+/* .search{
+  text-align: center;  
+} */
+
+h1{
+  text-align: left;
+}
+
+
 </style>
