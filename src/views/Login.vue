@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <div class="logo" style="margin-top: 30px">
       <img src="../assets/logo.svg" alt="" />
     </div>
@@ -52,6 +52,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.main {
+  text-align: center;
+}
 .login-button {
   width: 50%;
   max-width: 200px;
@@ -69,8 +72,9 @@ export default {
 }
 .login-input {
   border: 0.5px solid rgb(232, 232, 232);
-  padding: 10px;
-  width: 250px;
+  padding: 14px;
+  width: 80%;
+  height: 21px;
   margin-bottom: 10px;
   border-radius: 20px;
 }

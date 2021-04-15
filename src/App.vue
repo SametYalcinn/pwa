@@ -1,5 +1,8 @@
 <template>
-<IntroductionModal v-if="firstTime" @closeIntroductionModal="firstTime = false"/>
+  <IntroductionModal
+    v-if="firstTime"
+    @closeIntroductionModal="firstTime = false"
+  />
   <div class="menu-container">
     <div class="menu-item">
       <router-link to="/"
@@ -38,15 +41,18 @@ export default {
   data() {
     return {
       firstTime: true,
-    }
+    };
   },
   components: {
     IntroductionModal,
-  }, 
+  },
 };
 </script>
 
 <style>
+body {
+  margin: 0;
+}
 .menu-container {
   position: fixed;
   max-width: 300px;
@@ -78,7 +84,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
   color: #2c3e50;
 }
 
@@ -103,9 +108,7 @@ export default {
   text-align: center;  
 } */
 
-h1{
+h1 {
   text-align: left;
 }
-
-
 </style>

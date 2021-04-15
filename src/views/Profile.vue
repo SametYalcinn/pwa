@@ -1,8 +1,10 @@
 <template>
+<div class="main">
 <h1>Profile</h1>
  <Info firstName='Samet' lastName='Sanduuuhrrr' picture='../assets/pf/1.jpeg' followers="2" following="30" />
  <Options />
  <div class="whitespace"></div>
+ </div>
 </template>
 
 <script>
@@ -19,6 +21,9 @@ export default {
 </script>
 
 <style scoped>
+.main {
+    text-align: center;
+}
 .whitespace {
     height: 100px;
 }

@@ -5,8 +5,7 @@ const routes = [
   {
     path: "/",
     name: "Discover",
-    component: () =>
-    import( "../views/Discover.vue"),
+    component: () => import("../views/Discover.vue"),
   },
   {
     path: "/saved",
@@ -32,6 +31,11 @@ const routes = [
     path: "/login",
     name: "Login",
     component: () => import("../views/Login.vue"),
+  },
+  {
+    path: "/post",
+    name: "Post",
+    component: () => import("../views/Post.vue"),
   },
 ];
 
