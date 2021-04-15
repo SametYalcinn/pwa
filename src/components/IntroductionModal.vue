@@ -112,7 +112,8 @@ export default {
     mounted(){
         let self = this;
         let current_slide=1;
-        // const body=document.querySelector("body");
+        const body=document.querySelector("body");
+        body.style.overflow= "hidden";
         const slider=document.querySelector("#slideshow .slider");
         const slider1=document.querySelector("#slideshow");
         slider1.addEventListener("click", function() {
@@ -127,8 +128,10 @@ export default {
     },
     methods: {
         closeModal() {
+            const body=document.querySelector("body");
             console.log("beibfief");
             this.$emit('closeIntroductionModal');
+            body.style.overflow= "auto";
         }
     }
 };

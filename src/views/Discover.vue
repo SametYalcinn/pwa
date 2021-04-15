@@ -1,5 +1,5 @@
 <template>
-  <IntroductionModal v-if="firstTime" @closeIntroductionModal="firstTime = false"/>
+  <!-- <IntroductionModal v-if="firstTime" @closeIntroductionModal="firstTime = false"/> -->
   
   <div class="pagecontent">
     <h1>Discover</h1>
@@ -15,11 +15,11 @@
     </div>
     <div class="filter-item">
       <img src="../assets/icons/cloud-rain.svg"/>
-      <p>Sunny</p>
+      <p>Rain</p>
     </div>
     <div class="filter-item">
       <img src="../assets/icons/cloud-snow.svg"/>
-      <p>Sunny</p>
+      <p>Snow</p>
     </div>
     <div class="filter-item">
       <img src="../assets/icons/sun.svg"/>
@@ -27,7 +27,7 @@
     </div>
     <div class="filter-item">
       <img src="../assets/icons/cloud-snow.svg"/>
-      <p>Sunny</p>
+      <p>Snow</p>
     </div>
   </div>
 
@@ -74,7 +74,7 @@
 
 
 <script>
-import IntroductionModal from "../components/IntroductionModal";
+// import IntroductionModal from "../components/IntroductionModal";
 import PostCard from "../components/PostCard";
 
 export default {
@@ -102,7 +102,7 @@ export default {
     }
   },
   components: {
-    IntroductionModal,
+    // IntroductionModal,
     PostCard,
   }, 
 };

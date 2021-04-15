@@ -1,4 +1,5 @@
 <template>
+<IntroductionModal v-if="firstTime" @closeIntroductionModal="firstTime = false"/>
   <div class="menu-container">
     <div class="menu-item">
       <router-link to="/"
@@ -28,6 +29,22 @@
   </div>
   <router-view />
 </template>
+
+<script>
+import IntroductionModal from "./components/IntroductionModal";
+
+export default {
+  name: "App",
+  data() {
+    return {
+      firstTime: true,
+    }
+  },
+  components: {
+    IntroductionModal,
+  }, 
+};
+</script>
 
 <style>
 .menu-container {
