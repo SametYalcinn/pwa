@@ -67,6 +67,7 @@ body {
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  z-index: 99999;
 
   /* Primary Green */
 
