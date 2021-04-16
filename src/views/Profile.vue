@@ -1,7 +1,7 @@
 <template>
 <div class="main">
-<h1>Profile</h1>
- <Info firstName='Samet' lastName='Sanduuuhrrr' picture='../assets/pf/1.jpeg' followers="2" following="30" />
+<h1 style="margin: 40px 0px 0 40px">Profile</h1>
+ <Info firstName='Ad' lastName='Vlems' picture='../assets/pf/1.jpeg' followers="2" following="30" />
  <Options />
  <div class="whitespace"></div>
  </div>
