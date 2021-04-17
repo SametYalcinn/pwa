@@ -44,9 +44,7 @@
         </div>
         <div class="content-text">
           <p>
-            At the discover pdcdfdvcfefefeefefefeage you can find all the
-            solutions to help you contribute for a better climate. It also gives
-            you the possibility to search trough solutions.
+            You can find your saved solutions on this page. 
           </p>
         </div>
         <div class="content-image">
@@ -71,9 +69,7 @@
         </div>
         <div class="content-text">
           <p>
-            At the discover pdcdfdvcfefefeefefefeage you can find all the
-            solutions to help you contribute for a better climate. It also gives
-            you the possibility to search trough solutions.
+            This page gives you the possibilty to add your own solution to the community.
           </p>
         </div>
         <div class="content-image">
@@ -98,9 +94,7 @@
         </div>
         <div class="content-text">
           <p>
-            At the discover pdcdfdvcfefefeefefefeage you can find all the
-            solutions to help you contribute for a better climate. It also gives
-            you the possibility to search trough solutions.
+           You can read more about SDG 13; Climate Change and the latest news. 
           </p>
         </div>
         <div class="content-image">
@@ -125,9 +119,7 @@
         </div>
         <div class="content-text">
           <p>
-            At the discover pdcdfdvcfefefeefefefeage you can find all the
-            solutions to help you contribute for a better climate. It also gives
-            you the possibility to search trough solutions.
+            You can view or edit your profile on this page. 
           </p>
         </div>
         <div class="content-image">
